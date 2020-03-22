@@ -8,6 +8,7 @@ Vagrant.configure("2") do |config|
     # Set Image
     main.vm.box = "hashicorp/bionic64"
     main.vm.provider "hyperv" do |vb|
+      vb.cpus = 2
       vb.memory = 8192
       vb.enable_virtualization_extensions = true
       vb.linked_clone = true
