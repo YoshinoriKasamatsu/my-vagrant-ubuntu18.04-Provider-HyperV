@@ -23,5 +23,6 @@ Vagrant.configure("2") do |config|
     main.vm.provision :shell, :path => "./shell/install_chrome.sh"
     main.vm.provision :shell, :path => "./shell/install_nodejs.sh"
     main.vm.provision :shell, :path => "./shell/install_vscode.sh"
+    main.vm.provision :shell, :path => "./shell/install_docker.sh"
   end
 end
